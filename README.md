@@ -1,5 +1,15 @@
 # CEP API Microservice
 
+## Intro
+
+Esse microserviço serve de middleware para a api via cep, onde você envia o query param "cep" e recebe as informações daquele cep respectivamente.
+
+## Dependencies
+
+```
+npm install -g serverless
+```
+
 ## Deploy
 
 ```
