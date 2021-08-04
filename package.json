@@ -1,0 +1,21 @@
+{
+  "name": "cep-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "sls deploy --aws-profile pessoal",
+    "invoke-valid": "sls invoke -f cep-request --logger --path mock/cep/valid.cep.request.json --aws-profile pessoal",
+    "invoke-local-valid": "sls invoke local -f cep-request --logger --path mock/cep/valid.cep.request.json --aws-profile pessoal",
+    "invoke-invalid": "sls invoke -f cep-request --logger --path mock/cep/invalid.cep.request.json --aws-profile pessoal",
+    "invoke-local-invalid": "sls invoke local -f cep-request --logger --path mock/cep/invalid.cep.request.json --aws-profile pessoal"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1"
+  }
+}

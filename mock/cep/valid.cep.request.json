@@ -1,0 +1,9 @@
+{
+  "requestContext": {
+    "http": {
+      "method": "GET",
+      "path": "/cep"
+    }
+  },
+  "queryStringParameters": { "cep": "30575210" }
+}

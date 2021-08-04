@@ -1,0 +1,18 @@
+service: cep-microservice
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+  httpApi:
+    cors: true
+
+functions:
+  cep-request:
+    handler: handler.cep
+    events:
+      - httpApi:
+          path: /cep
+          method: get
